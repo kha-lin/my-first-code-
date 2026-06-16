@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My First Code – Kha-lin</title>
+  <title>Random Message</title>
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
     }
 
     body {
@@ -16,38 +17,38 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #4f46e5, #ec4899);
-      color: #111827;
+      background: #111827;
+      color: #f9fafb;
     }
 
     .card {
-      background: #ffffff;
+      background: #1f2937;
       padding: 32px 28px;
-      border-radius: 18px;
+      border-radius: 16px;
       max-width: 420px;
       width: 90%;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.35);
       text-align: center;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
     }
 
     h1 {
-      font-size: 2rem;
-      margin-bottom: 8px;
-      color: #111827;
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: #e5e7eb;
     }
 
     h2 {
-      font-size: 1rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: #6b7280;
+      letter-spacing: 0.16em;
+      color: #9ca3af;
       margin-bottom: 18px;
     }
 
     p {
-      font-size: 0.98rem;
-      color: #4b5563;
-      line-height: 1.6;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #e5e7eb;
       margin-bottom: 18px;
     }
 
@@ -71,16 +72,26 @@
 </head>
 <body>
   <div class="card">
-    <div class="tag">#MyFirstCode</div>
-    <h2>Hey, I’m Kha-lin 👋</h2>
-    <h1>Hello, world!</h1>
-    <p>
-      My name is Kha-lin and this is my very first line of code turned into
-      a real web page on the internet. More projects coming soon, so stay tuned.
-    </p>
-    <p class="footer">
-      Built with HTML • Hosted on GitHub Pages
-    </p>
+    <div class="tag">#MyFirstWebsite</div>
+    <h1>Random Message</h1>
+    <h2>Refresh to see another one</h2>
+    <p id="message"></p>
+    <div class="footer">Built with HTML, CSS & JavaScript</div>
   </div>
+
+  <script>
+    const messages = [
+      "Small steps every day lead to big changes.",
+      "Your future needs you, not your past.",
+      "You don’t have to be perfect to start.",
+      "Consistency beats motivation.",
+      "You are learning, not failing."
+    ];
+
+    const randomMessage =
+      messages[Math.floor(Math.random() * messages.length)];
+
+    document.getElementById("message").textContent = randomMessage;
+  </script>
 </body>
 </html>
