@@ -2,92 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Random Message</title>
+  <title>My First Code – Kha-lin</title>
   <style>
-     
- body {
-     margin: 0;
-     height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background: radial-gradient(circle at top, #1f2937, #020617);
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-     color: #e5e7eb;
-   }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
 
-   .card {
-     background: #020617;
-     padding: 24px 28px;
-     border-radius: 18px;
-     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
-     max-width: 360px;
-     text-align: center;
-     border: 1px solid rgba(148, 163, 184, 0.2);
-   }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #4f46e5, #ec4899);
+      color: #111827;
+    }
 
-   .tag {
-     display: inline-block;
-     font-size: 11px;
-     letter-spacing: 0.08em;
-     text-transform: uppercase;
-     color: #a5b4fc;
-     background: rgba(79, 70, 229, 0.1);
-     border-radius: 999px;
-     padding: 4px 10px;
-     margin-bottom: 12px;
-   }
+    .card {
+      background: #ffffff;
+      padding: 32px 28px;
+      border-radius: 18px;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.35);
+      text-align: center;
+    }
 
-   h1 {
-     font-size: 20px;
-     font-weight: 700;
-     color: #f9fafb;
-     margin-bottom: 4px;
-   }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: #111827;
+    }
 
-   h2 {
-     font-size: 11px;
-     letter-spacing: 0.16em;
-     text-transform: uppercase;
-     color: #9ca3af;
-     margin-bottom: 16px;
-   }
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #6b7280;
+      margin-bottom: 18px;
+    }
 
-   #message {
-     font-size: 14px;
-     color: #e5e7eb;
-     line-height: 1.6;
-     margin-bottom: 18px;
-   }
+    p {
+      font-size: 0.98rem;
+      color: #4b5563;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
 
-   .footer {
-     font-size: 11px;
-     color: #6b7280;
-   }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #4f46e5;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-top: 6px;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="tag">#MyFirstWebsite</div>
-    <h1>Random Message</h1>
-    <h2>Refresh to see another one</h2>
-    <p id="message"></p>
-    <div class="footer">Built with HTML, CSS & JavaScript!</div>
+    <div class="tag">#MyFirstCode</div>
+    <h1>Hey, I’m Kha-lin 👋</h1>
+    <h2>Hello, world!</h2>
+    <p>
+      My name is Kha-lin and this is my very first line of code turned into a real web page on the internet.
+      More projects coming soon, so stay tuned.
+    </p>
+    <div class="footer">Built with HTML • Hosted on GitHub Pages</div>
   </div>
-
-  <script>
-    const messages = [
-      "Small steps every day lead to big changes.",
-      "Your future needs you, not your past.",
-      "You don’t have to be perfect to start.",
-      "Consistency beats motivation.",
-      "You are learning, not failing."
-    ];
-
-    const randomMessage =
-      messages[Math.floor(Math.random() * messages.length)];
-
-    document.getElementById("message").textContent = randomMessage;
-  </script>
 </body>
 </html>
